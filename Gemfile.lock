@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    disjoint_set_forest (0.1.0)
+    disjoint_set_forest (1.1.0)
 
 GEM
   remote: https://rubygems.org/
