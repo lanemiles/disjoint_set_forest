@@ -8,7 +8,7 @@ The `find` operation is responsible for returning the set representative for a g
 
 The `union` operation is responsible for merging to disjoint sets together. At its core, this operation does little more than set the parent of one set's set representative to be the other set's set representative. Union by rank, which is implemented in the `union` operation, is based on the observation that the chioce of which set representative to make the parent of the other has implications for the height of the overall tree. This strategy uses the rank value to determine size, and always makes the set representative of the larger tree the new parent of the set represntative of the smaller tree. The rank value of an element remains unchanged if a smaller tree is added to it; it increases by one if an equal sized tree is added to it.
 
-When combined, path compression and union by rank lead to an asymptotic complexity of O(1) for `make_set` and `O(α(n))` for `find` and thus also `union`, where α(n) is the "inverse Ackermann" function. α(n) grows very slowly, such that "`α(n)` is less than 5 for any practical input size n."
+When combined, path compression and union by rank lead to an asymptotic complexity of O(1) for `make_set` and `O(α(n))` for `find` and thus also `union`, where `α(n)` is the "inverse Ackermann" function. `α(n)` grows very slowly, such that "`α(n)` is less than 5 for any practical input size n."
 
 ## Installation
 
